@@ -1,4 +1,4 @@
-# Copyright (C) 2020-2021 xFusion Technologies Co., Ltd. All rights reserved.
+# Copyright (C) 2020-2021 xFusion Digital Technologies Co., Ltd. All rights reserved.
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -112,6 +112,8 @@ TaskPercent  : 100%
 
 This example shows how to export bios setting file to iBMC local storage and download the file to local with secure parameter
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Import-iBMCBIOSSetting
 Reset-iBMCBIOSSetting
@@ -328,6 +330,8 @@ TaskPercent  : 100%
 
 This example shows how to import bios settings from SFTP file with secure parameter
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Export-iBMCBIOSSetting
 Reset-iBMCBIOSSetting
@@ -444,6 +448,8 @@ PS C:\> $session = Connect-iBMC -Address 192.168.1.1 -Credential $credential -Tr
 PS C:\> Reset-iBMCBIOSSetting $session
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 Export-iBMCBIOSSetting
 Import-iBMCBIOSSetting
 Restore-iBMCFactorySetting
@@ -528,6 +534,8 @@ Name              : BIOS Configuration Current Settings
 AttributeRegistry : BiosAttributeRegistry.7.6.2
 Attributes        : @{TcoTimeout=2}
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 #>
 
@@ -624,6 +632,8 @@ Attributes        : @{BMCWDTTimeout=20}
 Oem               : @{xFusion=}
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
   
 #>
 

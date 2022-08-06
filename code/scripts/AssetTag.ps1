@@ -1,4 +1,4 @@
-# Copyright (C) 2020 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2020 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -37,6 +37,8 @@ Host     : 192.168.1.1
 AssetTag : powershell-asset-tag
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Set-iBMCAssetTag
 Connect-iBMC
@@ -128,6 +130,8 @@ PS C:\> Set-iBMCAssetTag $session -AssetTag ''
 Set Asset Tag to null example
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCAssetTag
 Connect-iBMC

@@ -1,4 +1,4 @@
-# Copyright (C) 2020-2021 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2020-2021 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -49,6 +49,8 @@ VNC           : @{ProtocolEnabled=False; Port=5900}
 Video         : @{ProtocolEnabled=True; Port=2199}
 NAT           :
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Set-iBMCService
 Connect-iBMC
@@ -145,6 +147,8 @@ PS C:\> $credential = Get-Credential
 PS C:\> $session = Connect-iBMC -Address 192.168.1.1 -Credential $credential -TrustCert
 PS C:\> Set-iBMCService -Session $session -ServiceName VNC -Enabled $true -Port 5900
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCServices
 Connect-iBMC

@@ -1,4 +1,4 @@
-# Copyright (C) 2020-2021 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2020-2021 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -64,6 +64,8 @@ BootSourceOverrideMode                           : Legacy
 BootSourceOverrideTarget@Redfish.AllowableValues : {None, Pxe, Floppy, Cd...}
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Connect-iBMC
 Disconnect-iBMC
@@ -210,6 +212,8 @@ InterfaceType       : Physical
 BandwidthUsage      :
 BDF                 : 0000:1a:00.3
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Connect-iBMC
 Disconnect-iBMC

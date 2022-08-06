@@ -1,4 +1,4 @@
-# Copyright (C) 2020-2021 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2020-2021 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -73,6 +73,8 @@ NetworkPorts      : {@{Name=1; Id=1; PhysicalPortNumber=1; LinkStatus=; Associat
                     ciatedNetworkAddresses=System.Object[]; PortType=}, @{Name=4; Id=4; PhysicalPortNumber=4; LinkStatus=; AssociatedNetworkAddresses=Syste
                     m.Object[]; PortType=}}
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCNetworkAdaptersHealth
 Connect-iBMC
@@ -174,6 +176,8 @@ Host            : 192.168.1.1
 Summary         : @{HealthRollup=OK}
 ID#mainboardLOM : @{Health=OK; State=Enabled; Name=mainboardLOM}
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCNetworkAdapters
 Connect-iBMC

@@ -1,4 +1,4 @@
-# Copyright (C) 2020 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2020 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -132,6 +132,8 @@ LdapGroups                     : {@{MemberId=0; GroupName=; GroupDomain=CN=,OU=,
 
 This example shows how to query information about the specified domain controller
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Set-iBMCLDAPServiceEnabled
 Set-iBMCLDAP
@@ -267,6 +269,8 @@ LdapServiceEnabled : true
 
 Modify LDAP service enabled properties of a server.
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCLDAP
 Import-iBMCLDAPCert
@@ -474,6 +478,8 @@ TaskPercent  : 100%
 This example shows how to import LDAP certificate to different servers with secure parameter
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCLDAP
 Set-iBMCLDAPServiceEnabled
@@ -728,6 +734,8 @@ PS C:\> $result = Set-iBMCLDAP -Session $Session -LDAPID 1 -LDAPAddress "ldap.xf
 
 Modify information about the specified domain controller.
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCLDAP
 Import-iBMCLDAPCert

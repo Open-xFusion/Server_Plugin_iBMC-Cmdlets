@@ -1,4 +1,4 @@
-# Copyright (C) 2020 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2020 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -57,6 +57,8 @@ NetCfg          : {@{Device=; IPv4Addresses=System.Object[]; IPv6Addresses=Syste
 Packages        : {@{PackageName=System.Object[]; PatternName=System.Object[]}}
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCOSDeployConfig
 Set-iBMCOSDeployConfig
@@ -227,6 +229,8 @@ PS C:\> Set-iBMCServerPower -Session $session -ResetType ForceRestart
 
 This example shows the workflow of the OS deployment
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCOSDeployConfig
 Set-iBMCOSDeployConfig

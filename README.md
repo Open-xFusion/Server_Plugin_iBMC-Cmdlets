@@ -2,14 +2,14 @@
 
 ## Description
 
-xFusion iBMC cmdlets provide powershell Cmdlets to manage iBMC using Redfish API.
-These cmdlets contains the most commonly used features such as: information query, RAID configuration, OS deploy, firmware upgrade.
+xFusion iBMC cmdlets provide powershell Cmdlets to manage iBMC using Redfish API.  
+These cmdlets contains the most commonly used features such as: information query, RAID configuration, OS deploy, firmware upgrade.  
 
 ## Supported Device
 
-xFusion Blade Server:        RH1288 V3, RH2288 V3, RH2288H V3, 1288H V5, 2288H V5, 2288 V5, 2488H V5, 1288H V6, 2288H V6
-xFusion Rack Server:         CH121 V3, CH242 V3
-xFusion High-density Server: XH622 V3, XH321 V5
+xFusion Blade Server:        RH1288 V3, RH2288 V3, RH2288H V3, 1288H V5, 2288H V5, 2288 V5, 2488H V5, 1288H V6, 2288H V6  
+xFusion Rack Server:         CH121 V3, CH242 V3  
+xFusion High-density Server: XH622 V3, XH321 V5  
 
 ## Requirements
 
@@ -20,15 +20,9 @@ xFusion High-density Server: XH622 V3, XH321 V5
 - [WMF 5.0](https://www.microsoft.com/en-us/download/details.aspx?id=50395)
 
 ## Install
-
-- Online installation
-
-  ```powershell
-  Install-Module -Name xFusion-iBMC-Cmdlets -RequiredVersion 1.3.6
-  ```
 - Local installation
 
-  1、Decompress the xFusion-iBMC-Cmdlets v1.3.6.zip software packages to obtaion the xFusion-iBMC-Cmdlets folder
+  1、Decompress the xFusion-iBMC-Cmdlets v1.3.7.zip software packages to obtaion the xFusion-iBMC-Cmdlets folder  
   2、Copy the xFusion-iBMC-Cmdlets folder to the PowerShell installation directory  
   3、Run the following command to install xFusion-iBMC-Cmdlets:  
   

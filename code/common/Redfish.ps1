@@ -1,4 +1,4 @@
-# Copyright (C) 2020-2021 xFusion Technologies Co., Ltd. All rights reserved.
+# Copyright (C) 2020-2021 xFusion Digital Technologies Co., Ltd. All rights reserved.
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -112,6 +112,8 @@ X-Auth-Token : this-is-a-sample-token
 Location     : https://192.168.1.1/redfish/v1/Sessions/{session-id}/
 RootData     : @{@odata.context=/redfish/v1/$metadata#ServiceRoot/; @odata.id=/redfish/v1/; @odata.type=#ServiceRoot.1.0.0.ServiceRoot; AccountService=; Chassis=; EventService=; Id=v1; JsonSchemas=; Links=; Managers=; Name=HP RESTful Root Service; Oem=; RedfishVersion=1.0.0; Registries=; SessionService=; Systems=; UUID=8dea7372-23f9-565f-9396-2cd07febbe29}
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 #>
   [cmdletbinding(DefaultParameterSetName = 'AccountSet')]
@@ -198,7 +200,11 @@ RootData     : @{@odata.context=/redfish/v1/$metadata#ServiceRoot/; @odata.id=/r
   $session.DateTimeLocalOffset = $manager.DateTimeLocalOffset
   $session.State = $manager.Status.State
   $session.Health = $manager.Status.Health
-  $session.Oem = $manager.Oem.psobject.properties.name
+  if (!$manager.Oem -or !$manager.Oem.psobject.properties.name) {
+    $session.Oem = 'Huawei'
+  } else {
+    $session.Oem = $manager.Oem.psobject.properties.name
+  }
   return $session
 }
 
@@ -230,6 +236,8 @@ PS C:\>
 
 This will disconnect the session given in the variable $session
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 #>
   param
@@ -278,6 +286,8 @@ PS C:\>
 
 true
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 #>
   param
@@ -324,6 +334,8 @@ Task array that return by redfish async job API
 PS C:\> Wait-RedfishTasks $Sessions $Tasks
 PS C:\>
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 #>
   [CmdletBinding()]
@@ -485,6 +497,8 @@ Task array that return by redfish async job API
 
 .OUTPUTS
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 #>
   [CmdletBinding()]
@@ -685,6 +699,8 @@ Task object that return by redfish async job API
 PS C:\> Wait-RedfishTask $session $task
 PS C:\>
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 #>
   [CmdletBinding()]

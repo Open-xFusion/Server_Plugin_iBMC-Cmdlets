@@ -1,4 +1,4 @@
-# Copyright (C) 2020 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2020 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -56,6 +56,8 @@ It contains several steps:
 
 If step 1,2,3 has be executed before, "Get-iBMCSPRAIDSetting" could be executed directly.
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Export-iBMCSPRAIDSetting
 Set-iBMCSPRAIDSetting
@@ -142,6 +144,8 @@ PS C:\> $Session = Connect-iBMC -Address 192.168.1.1 -Credential $credential -Tr
 PS C:\> Export-iBMCSPRAIDSetting -Session $Session
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCSPRAIDSetting
 Set-iBMCSPRAIDSetting
@@ -235,6 +239,8 @@ PS C:\> Set-iBMCSPService -Session $Session -StartEnabled $true -SysRestartDelay
 PS C:\> Set-iBMCServerPower -Session $Session -ResetType ForceRestart
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCSPRAIDSetting
 Export-iBMCSPRAIDSetting
@@ -386,6 +392,8 @@ It contains several steps:
 Step 1 will update SP-RAID setting, while step 2,3,4 will make it effect.
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Connect-iBMC
 Disconnect-iBMC
@@ -562,6 +570,8 @@ It contains several steps:
 
 Step 1 will config a new volume (not effect), while step 2,3,4 will make it effect.
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCSPRAIDSetting
 Export-iBMCSPRAIDSetting

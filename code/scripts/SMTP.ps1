@@ -1,4 +1,4 @@
-# Copyright (C) 2020 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2020 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -43,6 +43,8 @@ EmailSubject          : Server Alert
 EmailSubjectContains  : {HostName, BoardSN, ProductAssetTag}
 AlarmSeverity         : Major
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Set-iBMCSMTPSetting
 Get-iBMCSMTPRecipients
@@ -172,6 +174,8 @@ PS C:\> Set-iBMCSMTPSetting $session -ServiceEnabled $false -ServerAddress smtp.
           -AlarmSeverity Critical
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCSMTPSetting
 Get-iBMCSMTPRecipients
@@ -352,6 +356,8 @@ Enabled      : False
 EmailAddress :
 Description  :
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCSMTPSetting
 Set-iBMCSMTPSetting
@@ -449,6 +455,8 @@ PS C:\> $session = Connect-iBMC -Address 192.168.1.1 -Credential $credential -Tr
 PS C:\> Set-iBMCSMTPRecipient $session -MemberId 1 -Enabled $true -EmailAddress r2@xfusion.com -Description 'desc'
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCSMTPSetting
 Set-iBMCSMTPSetting

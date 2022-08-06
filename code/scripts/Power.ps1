@@ -1,4 +1,4 @@
-# Copyright (C) 2020-2021 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2020-2021 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -42,6 +42,8 @@ MinConsumedWatts     : 18 Watts
 AverageConsumedWatts : 183 Watts
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Connect-iBMC
 Disconnect-iBMC
@@ -178,6 +180,8 @@ PowerOutputWatts   : 188
 Protocol           : PSU
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCPowerSuppliesHealth
 Connect-iBMC
@@ -266,6 +270,8 @@ Summary    : @{HealthRollup=Critical}
 MemberId#0 : @{Health=OK; State=Enabled; Name=PS1}
 MemberId#1 : @{Health=Critical; State=Enabled; Name=PS2}
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCPowerSupplies
 Connect-iBMC

@@ -1,4 +1,4 @@
-# Copyright (C) 2020-2021 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2020-2021 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -63,6 +63,8 @@ MinStripeSizeBytes       : 65536
 MaxStripeSizeBytes       : 1048576
 Drives                   : {HDDPlaneDisk0, HDDPlaneDisk1}
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCRAIDControllersHealth
 Set-iBMCRAIDController
@@ -167,6 +169,8 @@ Summary         : @{HealthRollup=OK}
 ID#RAIDStorage0 : @{Health=OK; State=Enabled; Name=RAID Card1 Controller}
 ID#RAIDStorage1 : @{Health=OK; State=Enabled; Name=PCIe Card 5 (RAID) Controller}
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCRAIDControllers
 Set-iBMCRAIDController
@@ -278,6 +282,8 @@ PS C:\> $Session = Connect-iBMC -Address 192.168.1.1 -Credential $credential -Tr
 PS C:\> Set-iBMCRAIDController -Session $session -StorageId RAIDStorage0 `
           -CopyBackEnabled $true -SmarterCopyBackEnabled $true -JBODEnabled $true
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCRAIDControllers
 Get-iBMCRAIDControllersHealth
@@ -415,6 +421,8 @@ PS C:\> $credential = Get-Credential
 PS C:\> $Session = Connect-iBMC -Address 192.168.1.1 -Credential $credential -TrustCert
 PS C:\> Restore-iBMCRAIDController -Session $Session -StorageId RAIDStorage0
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCRAIDControllers
 Get-iBMCRAIDControllersHealth

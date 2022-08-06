@@ -1,4 +1,4 @@
-# Copyright (C) 2020 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2020 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -98,6 +98,8 @@ PS C:\> $sessions
 This example shows how to connect to multiple bmc server using "-" seperated ipv6 addresses
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCSessionTimeout
 Set-iBMCSessionTimeout
@@ -231,6 +233,8 @@ PS C:\>
 
 This will disconnect the sessions given in the variable $Session
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCSessionTimeout
 Set-iBMCSessionTimeout
@@ -291,6 +295,8 @@ PS C:\> $credential = Get-Credential
 PS C:\> $session = Connect-iBMC -Address 192.168.1.1 -Credential $credential -TrustCert
 PS C:\> Set-iBMCSessionTimeout -Session $session -Timeout 600
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCSessionTimeout
 Set-iBMCSessionTimeout
@@ -376,6 +382,8 @@ PS C:\> $SessionTimeout | fl
 Host           : 192.168.1.1
 SessionTimeout : 600
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCSessionTimeout
 Set-iBMCSessionTimeout
@@ -465,6 +473,8 @@ Alive               : False
 AuthToken           : eac9b1d6be37f69fd783355ece67f2f2
 TrustCert           : True
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCSessionTimeout
 Set-iBMCSessionTimeout

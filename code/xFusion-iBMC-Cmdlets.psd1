@@ -1,4 +1,4 @@
-# Copyright (C) 2020 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2020 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -21,7 +21,7 @@
   RootModule             = 'xFusion-iBMC-Cmdlets.psm1'
 
   # Version number of this module.
-  ModuleVersion          = '1.3.6'
+  ModuleVersion          = '1.3.7'
 
   # Supported PSEditions
   # CompatiblePSEditions = @()
@@ -30,13 +30,13 @@
   GUID                   = '89a819e4-4ce1-438a-bd57-ac9828aa5ef5'
 
   # Author of this module
-  Author                 = 'xFusion Technologies Co., Ltd'
+  Author                 = 'xFusion Digital Technologies Co., Ltd'
 
   # Company or vendor of this module
-  CompanyName            = 'xFusion Technologies Co., Ltd'
+  CompanyName            = 'xFusion Digital Technologies Co., Ltd'
 
   # Copyright statement for this module
-  Copyright              = '(c) 2018 xFusion Technologies Co., Ltd. All rights reserved.'
+  Copyright              = '(c) 2018 xFusion Digital Technologies Co., Ltd. All rights reserved.'
 
   # Description of the functionality provided by this module
   Description            = 'xFusion iBMC cmdlets provide powershell Cmdlets to manage iBMC using Redfish API.
@@ -157,12 +157,15 @@ Support xFusion server model include: RH1288 V3, RH2288 V3, RH2288H V3, 1288H V5
       # IconUri = ''
 
       # ReleaseNotes of this module
-      ReleaseNotes = 'xFusion-iBMC-Cmdlets - Version 1.3.6
+      ReleaseNotes = 'xFusion-iBMC-Cmdlets - Version 1.3.7
 
       September, 2021
 
       Features:
-      - Support HTTPS Certificate Management.'
+      - Support HTTPS Certificate Management.
+
+      User guide:
+      https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets/tree/master/docs'
 
     } # End of PSData hashtable
 

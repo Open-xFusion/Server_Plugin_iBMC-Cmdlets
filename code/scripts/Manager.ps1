@@ -1,4 +1,4 @@
-# Copyright (C) 2020-2021 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2020-2021 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -138,6 +138,8 @@ PS C:\> Invoke-iBMCFileDownload -Session $session `
 This example shows how to export collect tarball file to BMC temp storage
   and then download the tarball file to local machine.
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Connect-iBMC
 Disconnect-iBMC
@@ -284,6 +286,8 @@ Path
 ----
 /tmp/web/2288H_V5_5288_V5-iBMC-V318.hpm
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Invoke-iBMCFileDownload
 Connect-iBMC
@@ -405,6 +409,8 @@ PS C:\> Invoke-iBMCFileDownload -Session $session `
           -BMCFileUri $BMCFilePath -LocalFileUri $LocalFilePath
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 #>
   [CmdletBinding()]

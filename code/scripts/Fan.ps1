@@ -1,4 +1,4 @@
-# Copyright (C) 2020-2021 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2020-2021 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -69,6 +69,8 @@ PartNumber                : 02311VSF
 Position                  : chassis
 SpeedRatio                : 32
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCFansHealth
 Connect-iBMC
@@ -159,6 +161,8 @@ MemberId#1 : @{Health=OK; State=Enabled; Name=Fan Module2 Front}
 MemberId#2 : @{Health=OK; State=Enabled; Name=Fan Module3 Front}
 MemberId#3 : @{Health=OK; State=Enabled; Name=Fan Module4 Front}
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCFans
 Connect-iBMC
