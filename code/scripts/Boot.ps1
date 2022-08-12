@@ -1,4 +1,4 @@
-# Copyright (C) 2020-2021 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2020-2021 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -42,6 +42,8 @@ PS C:\> $Sequence | fl
 Host           : 192.168.1.1
 BootupSequence : {Pxe, HDD, Cd, Others}
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Set-iBMCBootupSequence
 Get-iBMCBootSourceOverride
@@ -161,6 +163,8 @@ PS C:\> Set-iBMCBootupSequence $session $BootUpSequence
 Set boot up device sequence for multiple iBMC server
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCBootupSequence
 Get-iBMCBootSourceOverride
@@ -301,6 +305,8 @@ BootSourceOverrideTarget  : None
 BootSourceOverrideEnabled : Disabled
 BootSourceOverrideMode    : UEFI
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCBootupSequence
 Set-iBMCBootupSequence
@@ -406,6 +412,8 @@ PS C:\> Set-iBMCBootSourceOverride -Session $session -BootSourceOverrideTarget P
 Set boot source override target for multiple iBMC server
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCBootupSequence
 Set-iBMCBootupSequence

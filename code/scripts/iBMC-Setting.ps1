@@ -1,4 +1,4 @@
-# Copyright (C) 2020-2021 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2020-2021 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -33,6 +33,8 @@ PS C:\> $session = Connect-iBMC -Address 192.168.1.1 -Credential $credential -Tr
 PS C:\> Reset-iBMC $session
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Connect-iBMC
 Disconnect-iBMC
@@ -113,6 +115,8 @@ PS C:\> $session = Connect-iBMC -Address 192.168.1.1 -Credential $credential -Tr
 PS C:\> Restore-iBMCFactorySetting $session
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Export-iBMCBIOSSetting
 Import-iBMCBIOSSetting
@@ -249,6 +253,8 @@ ManagementNetworkPort : @{Type=Dedicated; PortNumber=1}
 
 This example shows how to query the IP of multiple server
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Set-iBMCIP
 Connect-iBMC
@@ -392,6 +398,8 @@ PS C:\> Set-iBMCIP -Session $Session -IPVersion $IPVersion `
 
 This example shows how to modify the IP of multiple servers
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCIP
 Connect-iBMC

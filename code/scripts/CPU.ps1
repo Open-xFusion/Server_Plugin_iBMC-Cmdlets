@@ -1,4 +1,4 @@
-# Copyright (C) 2020-2021 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2020-2021 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -82,6 +82,8 @@ OtherParameters         : 64-bit Capable| Multi-Core| Hardware Thread| Execute P
 Status                  : @{State=Enabled; Health=OK}
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCProcessorsHealth
 Connect-iBMC
@@ -118,7 +120,10 @@ Disconnect-iBMC
         $View = Invoke-RedfishRequest $RedfishSession $Path | ConvertFrom-WebResponse
         $Processors = New-Object System.Collections.ArrayList
         $View.Information | ForEach-Object {
-          [Void] $Processors.add($(Update-SessionAddress $RedfishSession $_))
+          $tmp = $(Update-SessionAddress $RedfishSession $_)
+          if (($null -ne $tmp) -and (!$tmp.ProcessorType -or 'CPU' -eq $tmp.ProcessorType)) {
+            [Void] $Processors.add($tmp)
+          }
         }
 
         return , $Processors.ToArray()
@@ -158,7 +163,10 @@ Disconnect-iBMC
           $CleanupOdata = $Processor | Clear-OdataProperties
           $Cleanup = Merge-OemProperties $CleanupOdata $OEM
           $ReOrder = Copy-ObjectProperties $Cleanup $Properties
-          [Void] $Processors.Add($(Update-SessionAddress $RedfishSession $ReOrder))
+          $tmp = $(Update-SessionAddress $RedfishSession $ReOrder)
+          if (($null -ne $tmp) -and (!$tmp.ProcessorType -or 'CPU' -eq $tmp.ProcessorType)) {
+            [Void] $Processors.add($tmp)
+          }
         }
         return , $Processors.ToArray()
       }
@@ -214,6 +222,8 @@ Summary : @{HealthRollup=OK}
 ID#1    : @{Health=OK; State=Enabled; DeviceLocator=CPU1}
 ID#2    : @{Health=OK; State=Enabled; DeviceLocator=CPU2}
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCProcessors
 Connect-iBMC

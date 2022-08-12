@@ -1,4 +1,4 @@
-# Copyright (C) 2020 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2020 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -135,6 +135,8 @@ Locked   : True
 Enabled  : True
 Oem      : @{xFusion=}
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCUser
 Set-iBMCUser
@@ -277,6 +279,8 @@ Enabled  : True
 Oem      : @{xFusion=}
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Add-iBMCUser
 Set-iBMCUser
@@ -480,6 +484,8 @@ Locked   : True
 Enabled  : True
 Oem      : @{xFusion=}
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Add-iBMCUser
 Get-iBMCUser
@@ -651,6 +657,8 @@ PS C:\> $session = Connect-iBMC -Address 192.168.1.1 -Credential $credential -Tr
 PS C:\> ,$session | Remove-iBMCUser -Username user1
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Add-iBMCUser
 Get-iBMCUser

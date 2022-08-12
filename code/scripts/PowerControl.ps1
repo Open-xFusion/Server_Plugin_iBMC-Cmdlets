@@ -1,4 +1,4 @@
-# Copyright (C) 2020-2021 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2020-2021 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -47,6 +47,8 @@ PS C:\> $session = Connect-iBMC -Address 192.168.1.1 -Credential $credential -Tr
 PS C:\> Set-iBMCFruControl -Session $session -FRU OS -ControlType On
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Connect-iBMC
 Disconnect-iBMC
@@ -153,6 +155,8 @@ PS C:\> $session = Connect-iBMC -Address 192.168.1.1 -Credential $credential -Tr
 PS C:\> Set-iBMCServerPower -Session $session -ResetType ForceRestart
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Connect-iBMC
 Disconnect-iBMC

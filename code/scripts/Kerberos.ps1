@@ -1,4 +1,4 @@
-﻿# Copyright (C) 2020-2021 xFusion Technologies Co., Ltd. All rights reserved.
+﻿# Copyright (C) 2020-2021 xFusion Digital Technologies Co., Ltd. All rights reserved.
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -38,6 +38,8 @@ Id              : KerberosService
 Name            : Kerberos Service
 KerberosEnabled : True
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 #>
 
@@ -125,6 +127,8 @@ Id              : KerberosService
 Name            : Kerberos Service
 KerberosEnabled : True
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 #>
 
@@ -239,6 +243,8 @@ KerberosGroups        : {@{MemberId=0; GroupName=test; GroupDomain=hello; GroupS
                         ystem.Object[]}, @{MemberId=3; GroupName=; GroupDomain=; GroupSID=; GroupRole=No Access; GroupL
                         oginRule=System.Object[]; GroupLoginInterface=System.Object[]}...}
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 #>
 
@@ -420,6 +426,8 @@ KerberosGroups        : {@{MemberId=0; GroupName=; GroupDomain=hello; GroupSID=;
                         s; GroupLoginRule=System.Object[]; GroupLoginInterface=System.Object[]}...}
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 #>
 
@@ -621,6 +629,8 @@ Resolution        : None
 
 This example shows how to import bios settings from local file
   
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 #>
   [CmdletBinding()]

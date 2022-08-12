@@ -1,4 +1,4 @@
-# Copyright (C) 2020-2021 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2020-2021 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -76,6 +76,8 @@ Position            : mainboard
 Status              : @{Health=OK; State=Enabled}
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCMemoryHealth
 Connect-iBMC
@@ -213,6 +215,8 @@ ID#mainboardDIMM110 : @{Health=OK; State=Enabled; DeviceLocator=DIMM110}
 ID#mainboardDIMM130 : @{Health=OK; State=Enabled; DeviceLocator=DIMM130}
 ID#mainboardDIMM140 : @{Health=OK; State=Enabled; DeviceLocator=DIMM140}
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCMemory
 Connect-iBMC

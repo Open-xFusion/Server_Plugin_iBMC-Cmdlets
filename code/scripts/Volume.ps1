@@ -1,4 +1,4 @@
-# Copyright (C) 2020-2021 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2020-2021 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -70,6 +70,8 @@ InitializationMode        : UnInit
 
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Set-iBMCVolume
 Connect-iBMC
@@ -186,6 +188,8 @@ PS C:\> $Session = Connect-iBMC -Address 192.168.1.1 -Credential $credential -Tr
 PS C:\> Initialize-iBMCVolume -Session $session -StorageId RAIDStorage0 `
           -VolumeId LogicalDrive0 -InitAction QuickInit
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCVolume
 Connect-iBMC
@@ -337,6 +341,8 @@ TaskStatus   : OK
 TaskPercent  :
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCVolume
 Connect-iBMC
@@ -597,6 +603,8 @@ TaskPercent  :
 This example show how to create a CacheCade volume
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCVolume
 Connect-iBMC
@@ -857,6 +865,8 @@ PS C:\> Set-iBMCVolume -Session $session -StorageId RAIDStorage0 -VolumeId Logic
           -BootEnabled $true -BGIEnabled $true
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCVolume
 Connect-iBMC

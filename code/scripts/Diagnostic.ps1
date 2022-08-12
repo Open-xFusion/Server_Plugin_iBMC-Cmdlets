@@ -1,4 +1,4 @@
-# Copyright (C) 2021 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2021 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -45,6 +45,8 @@ function Get-iBMCDiagnosticService {
     VideoRecordInfo       : {$null, @{VideoSizeByte=324404; CreateTime=2021-02-23 13:22:21}, @{VideoSizeByte=606024; CreateTime=2021-02-26 07:21:07}}
     ScreenShotCreateTime  : {2021-02-26 07:20:44, 2021-02-26 07:08:48, 2021-02-26 07:09:11, $null}
     
+    .LINK
+    https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
     
     Set-iBMCDiagnosticService
     Connect-iBMC
@@ -147,6 +149,8 @@ function Get-iBMCDiagnosticService {
     PS C:\> $session = Connect-iBMC -Address 192.168.1.1 -Credential $credential -TrustCert
     PS C:\> Set-iBMCDiagnosticService -Session $session -VideoRecordingEnabled $true -ScreenShotEnabled $true -BlackBoxEnabled $true -SerialPortDataEnabled $true
     
+    .LINK
+    https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
     
     Get-iBMCDiagnosticService
     Connect-iBMC

@@ -1,4 +1,4 @@
-# Copyright (C) 2020 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2020 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -41,6 +41,8 @@ RWCommunityEnabled  : True
 SnmpV3AuthProtocol  : MD5
 SnmpV3PrivProtocol  : DES
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Set-iBMCSNMPSetting
 Get-iBMCSNMPTrapSetting
@@ -171,6 +173,8 @@ PS C:\> Set-iBMCSNMPSetting $session -SnmpV1Enabled $false -SnmpV2CEnabled $fals
         -SnmpV3AuthProtocol MD5 -SnmpV3PrivProtocol DES
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCSNMPSetting
 Get-iBMCSNMPTrapSetting
@@ -330,6 +334,8 @@ TrapServerIdentity : BoardSN
 AlarmSeverity      : Critical
 CommunityName      : ******
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 #>
 
@@ -447,6 +453,8 @@ PS C:\> Set-iBMCSNMPTrapSetting -Session $session -ServiceEnabled $true -TrapVer
           -CommunityName $CommunityName -AlarmSeverity Critical
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCSNMPSetting
 Set-iBMCSNMPSetting
@@ -614,6 +622,8 @@ Enabled           : True
 TrapServerAddress : 192.168.10.2
 TrapServerPort    : 202
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCSNMPSetting
 Set-iBMCSNMPSetting
@@ -717,6 +727,8 @@ PS C:\> $session = Connect-iBMC -Address 192.168.1.1 -Credential $credential -Tr
 PS C:\> Set-iBMCSNMPTrapServer $session -MemberId 1 -Enabled $true -TrapServerAddress 192.168.2.8 -TrapServerPort 1024
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCSNMPSetting
 Set-iBMCSNMPSetting

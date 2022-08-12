@@ -1,4 +1,4 @@
-# Copyright (C) 2020-2021 xFusion Technologies Co., Ltd. All rights reserved.
+# Copyright (C) 2020-2021 xFusion Digital Technologies Co., Ltd. All rights reserved.
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -39,6 +39,8 @@ SR430C-M 1G (SAS3108)@[RAID Card1] : 4.270.00-4382
 LOM (X722)@[LOM]                   : 3.33 0x80000f09 255.65535.255
 SPService                          : @{APPVersion=1.09; OSVersion=1.09; DataVersion=1.09}
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCOutbandFirmware
 Update-iBMCInbandFirmware
@@ -166,6 +168,8 @@ Bios                               : 0.81
 MainBoardCPLD                      : 2.02
 chassisDiskBP1CPLD                 : 1.10
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCInbandFirmware
 Update-iBMCInbandFirmware
@@ -361,6 +365,8 @@ Messages                : {@{@odata.type=/redfish/v1/$metadata#MessageRegistry.1
 
 This example shows how to update SP with remote file with secure parameter
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCInbandFirmware
 Get-iBMCOutbandFirmware
@@ -554,6 +560,8 @@ PS C:\> $session = Connect-iBMC -Address 192.168.1.1 -Credential $credential -Tr
 PS C:\> Set-iBMCSPService -Session $session -StartEnabled $true -SysRestartDelaySeconds 60
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCInbandFirmware
 Get-iBMCOutbandFirmware
@@ -674,6 +682,8 @@ Clone     :
 Recover   :
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCInbandFirmware
 Get-iBMCOutbandFirmware
@@ -823,6 +833,8 @@ TaskPercent  : 100%
 
 This example shows how to update outband firmware with NFS network file
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCInbandFirmware
 Get-iBMCOutbandFirmware

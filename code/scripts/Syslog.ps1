@@ -1,4 +1,4 @@
-# Copyright (C) 2020 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2020 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -41,6 +41,8 @@ AlarmSeverity        : Normal
 TransmissionProtocol : UDP
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Set-iBMCSyslogSetting
 Get-iBMCSyslogServer
@@ -138,6 +140,8 @@ PS C:\> $session = Connect-iBMC -Address 192.168.1.1 -Credential $credential -Tr
 PS C:\> Set-iBMCSyslogSetting $session -ServiceEnabled $true -ServerIdentitySource HostName `
           -AlarmSeverity Major -TransmissionProtocol UDP
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCSyslogSetting
 Get-iBMCSyslogServer
@@ -279,6 +283,8 @@ Port     : 0
 LogType  : {OperationLog, SecurityLog, EventLog}
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCSyslogSetting
 Set-iBMCSyslogSetting
@@ -387,6 +393,8 @@ PS C:\> $session = Connect-iBMC -Address 192.168.1.1 -Credential $credential -Tr
 PS C:\> $LogType = ,@("OperationLog", "SecurityLog", "EventLog")
 PS C:\> Set-ibmcSyslogServer $session -MemberId 1 -Enabled $true -Address 192.168.14.9 -Port 515 -LogType $LogType
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCSyslogSetting
 Set-iBMCSyslogSetting

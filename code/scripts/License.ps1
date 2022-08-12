@@ -1,4 +1,4 @@
-# Copyright (C) 2020 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2020 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -49,15 +49,17 @@ AlarmInfo       : @{RemainGraceDay=0; RemainCommissioningDay=0; ProductESNValidS
 
 PS C:\> $License.LicenseInfo.GeneralInfo
 
-CopyRight   : xFusion Technologies Co., Ltd. All rights reserved.
+CopyRight   : xFusion Digital Technologies Co., Ltd. All rights reserved.
 LSN         : LIC20180911LXWZ5C
 LicenseType : Commercial
 GraceDay    : 60
-Creator     : xFusion Technologies Co., Ltd.
+Creator     : xFusion Digital Technologies Co., Ltd.
 Issuer      : License Distribution Center
 CreateTime  : 2018-09-11 11:42:02
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCLicense
 Install-iBMCLicense
@@ -212,6 +214,8 @@ TaskPercent  : 100%
 
 This example shows how to install iBMC license from NFS network file with secure parameter
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 #>
   [CmdletBinding()]
@@ -386,6 +390,8 @@ Messages     : @{@odata.type=/redfish/v1/$metadata#MessageRegistry.1.0.0.Message
 
 This example shows how to export iBMC license to sftp network file with secure parameter
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCLicense
 Install-iBMCLicense
@@ -511,6 +517,8 @@ PS C:\> $credential = Get-Credential
 PS C:\> $session = Connect-iBMC -Address 192.168.1.1 -Credential $credential -TrustCert
 PS C:\> Delete-iBMCLicense -Session $session
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCLicense
 Install-iBMCLicense

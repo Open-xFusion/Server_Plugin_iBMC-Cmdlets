@@ -1,4 +1,4 @@
-# Copyright (C) 2020-2021 xFusion Technologies Co., Ltd. All rights reserved.
+# Copyright (C) 2020-2021 xFusion Digital Technologies Co., Ltd. All rights reserved.
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -60,6 +60,8 @@ MinPollingInterval          : 10
 MaxPollingInterval          : 12
 ServerAuthenticationEnabled : False
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Set-iBMCNTPSetting
 Import-iBMCNTPKey
@@ -175,6 +177,8 @@ PS C:\> Set-iBMCNTPSetting $session -ServiceEnabled $true
           -NtpAddressOrigin Static -ServerAuthenticationEnabled $false `
           -MinPollingInterval 10 -MaxPollingInterval 12
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCNTPSetting
 Import-iBMCNTPKey
@@ -380,6 +384,8 @@ TaskPercent  : 100%
 
 This example shows how to import NTP group key from sftp network file with secure parameter
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCNTPSetting
 Set-iBMCNTPSetting

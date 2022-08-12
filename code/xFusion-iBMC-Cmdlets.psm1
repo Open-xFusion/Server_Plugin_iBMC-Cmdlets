@@ -1,4 +1,4 @@
-# Copyright (C) 2020 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2020 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -61,6 +61,8 @@ Description : xFusion iBMC cmdlets provide cmdlets to quick access iBMC Redfish 
 
 This example shows the cmdlets module details.
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 #>
     [CmdletBinding(PositionalBinding=$false)]

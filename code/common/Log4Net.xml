@@ -12,7 +12,7 @@
 			<Encoding value="utf-8" />
 			<MaximumFileSize value="2MB" />
 			<MaxSizeRollBackups value="10"/>
-			<RollingStyle value="Composite"/>
+			<RollingStyle value="Size"/>
 			<LockingModel type="log4net.Appender.FileAppender+MinimalLock" />
 			<StaticLogFileName value="false"/>
 			<layout type="log4net.Layout.PatternLayout">

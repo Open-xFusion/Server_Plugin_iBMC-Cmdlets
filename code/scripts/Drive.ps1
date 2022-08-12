@@ -1,4 +1,4 @@
-# Copyright (C) 2020-2021 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2020-2021 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -149,6 +149,8 @@ Type                          : Disk
 
 This example shows how to get all drives belongs to Storage controller "RAIDStorage0".
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCDrivesHealth
 Set-iBMCDrive
@@ -271,6 +273,8 @@ ID#HDDPlaneDisk40 : @{Health=OK; State=; Name=Disk40}
 ID#HDDPlaneDisk41 : @{Health=OK; State=; Name=Disk41}
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCDrives
 Set-iBMCDrive
@@ -425,6 +429,8 @@ PS C:\> Set-iBMCDrive -Session $session -DriveId HDDPlaneDisk0 -HotSpareType Non
 This example shows how to set drive's hot-spare type to "None"
 
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCDrives
 Get-iBMCDrivesHealth

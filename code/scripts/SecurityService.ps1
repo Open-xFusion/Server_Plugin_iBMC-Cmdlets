@@ -1,4 +1,4 @@
-# Copyright (C) 2021 xFusion Technologies Co., Ltd. All rights reserved.	
+# Copyright (C) 2021 xFusion Digital Technologies Co., Ltd. All rights reserved.	
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the MIT License		
 
@@ -46,6 +46,8 @@ RemoteHttpsServerCertChainInfo : {}
 
 This example shows how to query information about the security services supported by the server
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Set-iBMCSecurityService
 Import-iBMCRemoteHttpsServerCrl
@@ -155,6 +157,8 @@ HttpsTransferCertVerification : true
 
 Modify the security service properties of a server.
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCSecurityService
 Import-iBMCRemoteHttpsServerCrl
@@ -313,6 +317,8 @@ TaskPercent  : 100%
 
 This example shows how to import the root certificate from SFTP file with secure parameter
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCSecurityService
 Set-iBMCSecurityService
@@ -451,6 +457,8 @@ PS C:\> Remove-iBMCRemoteHttpsServerRootCA -Session $session -CertID 5
 
 This example shows how to delete the certificate of a remote HTTPS server
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCSecurityService
 Set-iBMCSecurityService
@@ -608,6 +616,8 @@ TaskPercent  : 100%
 
 This example shows how to import the CRL of a remote HTTPS server from SFTP file with secure parameter
 
+.LINK
+https://github.com/Open-xFusion/Server_Plugin_iBMC-Cmdlets
 
 Get-iBMCSecurityService
 Set-iBMCSecurityService
